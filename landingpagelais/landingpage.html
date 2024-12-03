@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Arquitetura</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+    <header>
+        <h1>Domine as Paletas de Cores na Arquitetura!</h1>
+        <p>Cadastre-se e ganhe uma videoaula exclusiva sobre o tema "Paleta de Cores"</p>
+    </header>
+    <main>
+        <section class="left-section">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img src="arquitetura.jpg" alt="Imagem 1" class="carousel-item">
+                    <img src="arquitetura2.jpg" alt="Imagem 2" class="carousel-item">
+                    <img src="arquitetura3.jpg" alt="Imagem 3" class="carousel-item">
+                </div>
+                <button class="carousel-button prev" aria-label="Imagem anterior">&lt;</button>
+                <button class="carousel-button next" aria-label="Próxima imagem">&gt;</button>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                </div>
+            </div>
+            
+            
+            <div class="text">
+                <p> A arquitetura é a arte de criar espaços que vão além do funcional, transformando o ambiente ao nosso redor em algo que inspira e conecta. Edifícios bem projetados não apenas atendem às necessidades do dia a dia, mas também influenciam nossas emoções, promovem bem-estar e refletem a cultura e a história de uma sociedade. Seja projetando casas, escolas ou espaços públicos, a arquitetura tem o poder de moldar a forma como vivemos, interagimos e enxergamos o mundo.</p>
+                <p>Além da estética, a arquitetura também é um instrumento para resolver problemas práticos. Projetos inteligentes otimizam recursos, aproveitam iluminação natural, melhoram a ventilação e reduzem o consumo energético, contribuindo para um futuro mais sustentável. Cada detalhe, desde a escolha dos materiais até a integração com o entorno, é pensado para criar um impacto positivo no planeta e nas pessoas que utilizam esses espaços.</p>
+                <p>Por fim, a arquitetura é importante porque é acessível a todos, mesmo que de maneira indireta. Estamos cercados por ela em cada edifício, parque ou rua que frequentamos. Aprender sobre arquitetura nos ajuda a valorizar o que já existe e a enxergar o potencial de transformar espaços em algo ainda melhor. Ao entender a relevância da arquitetura, percebemos que ela está em tudo o que nos cerca, tornando-a indispensável para um mundo mais belo, funcional e humano.</p>
+            </div>
+        </section>
+        <section class="form-section">
+            <h2>Inscreva-se</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="gender">Gênero:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Selecione</option>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                </select>
+                
+                <label for="age">Idade:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <div class="consent">
+                    <input type="checkbox" id="promotion-consent" name="promotion-consent" required>
+                    <label for="promotion-consent">Autorizo receber notificações de promoções</label>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="landingpage.js"></script>
+</body>
+</html>
